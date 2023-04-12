@@ -1,5 +1,4 @@
 import Navbar from "../src/components/Navbar"
-import Chat from "../src/components/Chat"
 
 import { Routes , Route } from "react-router-dom";
 
@@ -32,7 +31,6 @@ function App() {
 
    </Routes>
 
-   <Chat />
    
    </>
   );

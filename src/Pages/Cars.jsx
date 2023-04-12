@@ -7,7 +7,7 @@ const Cars = () => {
     <div>
           <div className='cars__title'>
               <h2>Our cars</h2>
-              <h3>Our Collegs</h3>
+              <h3>Our fleet</h3>
 
           </div>
 
@@ -19,8 +19,8 @@ const Cars = () => {
                   </div>
 
                   <div className="cars-container__text">
-                      <h3>Luke Miller</h3>
-                      <p>Salesman</p>
+                      <h3>Audi</h3>
+                      <p>Model: A1</p>
                   </div>
               </div>
 
@@ -32,8 +32,8 @@ const Cars = () => {
                   </div>
 
                   <div className="cars-container__text">
-                      <h3>Michael Diaz</h3>
-                      <p>Busines Owner</p>
+                      <h3>Mercedes Benz</h3>
+                      <p>Model" GLK</p>
                   </div>
               </div>
               <div className="cars-card">
@@ -44,8 +44,8 @@ const Cars = () => {
                   </div>
 
                   <div className="cars-container__text">
-                      <h3>Briana Ross</h3>
-                      <p>Photographer</p>
+                      <h3>BMW</h3>
+                      <p>Model: 320</p>
                   </div>
               </div>
               <div className="cars-card">
@@ -56,8 +56,8 @@ const Cars = () => {
                   </div>
 
                   <div className="cars-container__text">
-                      <h3>Lauren Rivera</h3>
-                      <p>Car Detalilist</p>
+                      <h3>Volkswagen</h3>
+                      <p>Model: golf 6</p>
                   </div>
               </div>
               <div className="cars-card">
@@ -68,8 +68,8 @@ const Cars = () => {
                   </div>
 
                   <div className="cars-container__text">
-                      <h3>Martin Rizz</h3>
-                      <p>Mechanic</p>
+                      <h3>Volkswagen</h3>
+                      <p>Model: passat</p>
                   </div>
               </div>
 
@@ -81,8 +81,8 @@ const Cars = () => {
                   </div>
 
                   <div className="cars-container__text">
-                      <h3>Caitlyn Hunt</h3>
-                      <p>Manager</p>
+                      <h3>Toyota</h3>
+                      <p>Model: Corolla</p>
                   </div>
               </div>
 

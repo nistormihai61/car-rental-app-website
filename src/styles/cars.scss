@@ -17,6 +17,8 @@
 }
 
 .cars-box {
+    width: 80%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -24,8 +26,8 @@
     gap: 2rem;
 
     img {
-        width: 95%;
-        height: auto;
+        width: 90%;
+        min-height: 250px;
 
 
     }

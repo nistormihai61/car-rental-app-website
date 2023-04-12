@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   color: $text-black;
+  margin-bottom: 7rem;
 
   &__title {
     display: flex;
@@ -40,6 +41,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 7rem;
+  
 }
 
 .faq-box {
@@ -51,6 +53,7 @@
 
   width: 80rem;
   cursor: pointer;
+  margin-bottom: 3rem;
 
   @media (max-width: 850px) {
     width: 100%;
