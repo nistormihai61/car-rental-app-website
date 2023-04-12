@@ -1,0 +1,88 @@
+@use "./variables.scss"as *;
+
+
+
+.book-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+
+    h1 {
+        font-size: $h2-size;
+    }
+
+}
+
+
+.book-container {
+    width: 600px;
+    height: 700px;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "city1 city2"
+        "time1 time2"
+        "button button";
+    font-size: $h3-size;
+
+
+}
+
+.book__card1 {
+    grid-area: title;
+
+}
+
+.book__card2 {
+    grid-area: city1;
+}
+
+.book__card3 {
+    grid-area: city2;
+}
+
+.book__card4 {
+    grid-area: time1;
+}
+
+.book__card5 {
+    grid-area: time2;
+}
+
+.book__card6 {
+    grid-area: button;
+}
+
+select {
+    font-size: 1.5rem;
+    color: #ababab;
+    font-family: $text-font;
+    border: 1px solid #ccd7e6;
+    border-radius: 3px;
+    font-weight: 400;
+    padding: 1.2rem 6rem;
+    
+}
+
+.book__card6 button {
+    font-size: 2rem;
+    font-family: $titles-font;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    padding: 1.5rem 2.5rem;
+    background-color: $text-orange;
+    transition: 0.8s;
+    text-align: center;
+    width: 400px;
+    color: white;
+
+
+    &:hover {
+        background-color: $text-orange;
+        color: white;
+    }
+}
