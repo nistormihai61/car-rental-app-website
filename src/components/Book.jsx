@@ -15,9 +15,9 @@ const Book = () => {
 
                 <div className='book-container'>
 
-                    <div className="book__card1 ">
+                    <div className="book__card1" >
 
-                        <div><FontAwesomeIcon icon={faCar} color="#f92707"/> Select Your Car Type</div>
+                        <div><FontAwesomeIcon icon={faCar} color="#f92707" /> Select Your Car Type</div>
 
                         <select >
                             <option>Select your car type </option>

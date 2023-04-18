@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import "../styles/navbar.scss"
-import {  } from '@fortawesome/react-fontawesome'
-import {  } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -29,6 +29,8 @@ const Navbar = () => {
           <Link className="navbar__buttons__sign-in" to="/">Sign In</Link>
           <Link className="navbar__buttons__register" to="/register"> Register</Link>
         </div>
+
+        <FontAwesomeIcon icon={faBars} className='toggle'/>
 
        
 
