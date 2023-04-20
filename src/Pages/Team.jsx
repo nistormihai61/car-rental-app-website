@@ -1,100 +1,51 @@
-import React from 'react'
-import Footer from '../components/Footer'
+import Footer from "../components/Footer";
+
+import Person1 from "../images/team/1.png";
+import Person2 from "../images/team/2.png";
+import Person3 from "../images/team/3.png";
+import Person4 from "../images/team/4.png";
+import Person5 from "../images/team/5.png";
+import Person6 from "../images/team/6.png";
+
+
 import "../styles/team.scss"
 
-
-const Team = () => {
+function Team() {
+  const teamData = [
+    { img: Person1, name: "Luke Miller", job: "Salesman" },
+    { img: Person2, name: "Michael Diaz", job: "Business Owner" },
+    { img: Person3, name: "Briana Ross", job: "Photographer" },
+    { img: Person4, name: "Lauren Rivera", job: "Car Detailist" },
+    { img: Person5, name: "Martin Rizz", job: "Mechanic" },
+    { img: Person6, name: "Caitlyn Hunt", job: "Menager" },
+  
+  ];
   return (
     <>
-      <div className='team__title'>
-        <h2>Our Team</h2>
-        <h3>Our Collegs</h3>
+      <div className="team_section">
+    
+        
+          <div className="team_container">
 
+            {teamData.map((props) => (
+              <div className="team_container__card">
+                <div className="team_container__box__profile">
+                  <img src={props.img} alt="" />
+                </div>
+                <div className="team_descr">
+                  <h3>{props.name}</h3>
+                  <p>{props.job}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+      
+ 
       </div>
-
-      <div className='team-box'>
-        <div className="team-card">
-
-          <div className="team-container__photo">
-            <img src="./images/team/1.png" alt="" />
-          </div>
-
-          <div className="team-container__text">
-            <h3>Luke Miller</h3>
-            <p>Salesman</p>
-          </div>
-        </div>
-
-
-        <div className="team-card">
-
-          <div className="team-container__photo">
-            <img src="./images/team/2.png" alt="" />
-          </div>
-
-          <div className="team-container__text">
-            <h3>Michael Diaz</h3>
-            <p>Busines Owner</p>
-          </div>
-        </div>
-        <div className="team-card">
-
-
-          <div className="team-container__photo">
-            <img src="./images/team/3.png" alt="" />
-          </div>
-
-          <div className="team-container__text">
-            <h3>Briana Ross</h3>
-            <p>Photographer</p>
-          </div>
-        </div>
-        <div className="team-card">
-
-
-          <div className="team-container__photo">
-            <img src="./images/team/4.png" alt="" />
-          </div>
-
-          <div className="team-container__text">
-            <h3>Lauren Rivera</h3>
-            <p>Car Detalilist</p>
-          </div>
-        </div>
-        <div className="team-card">
-
-
-          <div className="team-container__photo">
-            <img src="./images/team/5.png" alt="" />
-          </div>
-
-          <div className="team-container__text">
-            <h3>Martin Rizz</h3>
-            <p>Mechanic</p>
-          </div>
-        </div>
-
-
-        <div className="team-card">
-
-          <div className="team-container__photo">
-            <img src="./images/team/6.png" alt="" />
-          </div>
-
-          <div className="team-container__text">
-            <h3>Caitlyn Hunt</h3>
-            <p>Manager</p>
-          </div>
-        </div>
-
-
-      </div>
-
-
-
-      <Footer />
+        <Footer />
+     
     </>
-  )
+  );
 }
 
-export default Team
+export default Team;
